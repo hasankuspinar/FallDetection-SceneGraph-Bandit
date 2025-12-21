@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+dist/
+build/
+.offload_vlm/
+offload_vlm/
+video_logs/
+*.log
+.ipynb_checkpoints/

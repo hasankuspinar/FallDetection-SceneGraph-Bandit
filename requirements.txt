@@ -1,0 +1,16 @@
+
+---
+
+
+```txt
+torch
+torchvision
+transformers
+ultralytics
+opencv-python
+numpy
+Pillow
+scikit-learn
+matplotlib
+pyyaml
+psutil

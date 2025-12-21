@@ -1,0 +1,63 @@
+models:
+  dino_model_id: "IDEA-Research/grounding-dino-base"
+  dpt_model_id: "Intel/dpt-large"
+  mask2former_id: "facebook/mask2former-swin-large-coco-instance"
+  segformer_ade_id: "nvidia/segformer-b5-finetuned-ade-640-640"
+  yolo_pose_ckpt: "yolov8s-pose.pt"
+  yolo_track_ckpt: "yolov8x.pt"
+
+device:
+  prefer_cuda: true
+
+dino_thresholds:
+  box_conf_thr: 0.30
+  logit_thr: 0.35
+  text_thr: 0.25
+
+relations:
+  flip_left_right: true
+  flip_front_back: true
+
+spatial:
+  lr_depth_overlap: 0.15
+  lr_horiz_eps: 0.03
+  above_vert_eps: 0.07
+  fb_iou_thr: 0.02
+  fb_dz_thr: 0.06
+  closer_is_smaller: true
+
+ransac:
+  ransac_floor_thr: 0.035
+  floor_contact_dz_thr: 0.04
+  depth_ema_alpha: 0.7
+  floor_ema_alpha: 0.85
+
+proximity:
+  prox_min: 0.24
+  prox_px_alpha: 0.38
+  prox_dz_alpha: 0.18
+
+smoothing:
+  posture_smooth_window: 3
+  support_smooth_window: 3
+  support_change_confirm: 2
+  rel_smooth_window: 4
+  rel_confirm: 2
+
+bandit:
+  score_thr: 2.0
+  cooldown_s: 4.0
+  summary_max: 6
+  k_of_n:
+    k: 1
+    n: 1
+  alpha: 1.4
+  eps_greedy: 0.05
+  constraints:
+    max_alarms_per_minute: 6
+    budget_per_minute: 6.0
+
+caption:
+  text: >
+    person. bed. table. chair. sofa. couch. bench. stool. luggage. suitcase.
+    wardrobe. floor. nightstand. carpet. rug. mat. ground.
