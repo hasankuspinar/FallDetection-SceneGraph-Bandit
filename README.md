@@ -89,8 +89,8 @@ The proposed method was evaluated on **URFall** and **CAUCAFall** datasets and c
 | InstructBLIP (baseline) | 0.471 | 1.000 | 0.640 | 0.471 |
 | SmolVLM2-500M | 0.824 | 0.735 | 0.710 | 0.735 |
 | Video-LLaVA-7B | 0.784 | 0.783 | 0.783 | 0.782 |
-| Qwen3-VL-8B-Instruct | **0.929** | 0.924 | 0.924 | **0.924** |
-| **Ours (Scene Graph + LinUCB)** | 0.686 | **0.960** | **0.800** | 0.760 |
+| Qwen3-VL-8B-Instruct | 0.929 | 0.924 | 0.924 | 0.924 |
+| **Ours (Scene Graph + LinUCB)** | **0.686** | **0.960** | **0.800** | **0.760** |
 
 ### Discussion
 
