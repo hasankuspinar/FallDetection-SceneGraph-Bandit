@@ -101,4 +101,5 @@ The proposed method was evaluated on **URFall** and **CAUCAFall** datasets and c
 
 ---
 
+Additional information can be found in the final project report.
 
